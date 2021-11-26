@@ -30,7 +30,6 @@ function App() {
     fetchData();
 
   })
-
   return (
     <div className="App">
       <h1>List of Videos<h1/>
