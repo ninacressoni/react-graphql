@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState }  from 'react';
 import './App.css';
-import * as Constants from './Constants';
+import * as Constants from './constants';
 import axios from 'axios';
+import Video from './video';
 
   // const [data, setData] >>> (currentState, changethecurrentState)
   // useState hook is going to return the current state of the 
@@ -32,7 +33,7 @@ function App() {
   })
   return (
     <div className="App">
-      <h1>List of Videos<h1/>
+      <h1>List of Videos</h1>
       <ul>
         {data.videos.map(item => (
           <li key={item.id}>
